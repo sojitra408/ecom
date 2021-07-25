@@ -1,0 +1,232 @@
+@extends('layouts.app')
+
+@section('content')
+
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Register Now</h2>
+        </div>
+
+        <div class="row content">
+            <div class="col-md-4 mobile-bot">
+            <h2 class="text-normal text-white mb-">We Are More than Just a Shipping Partner</h2>
+            <p class="with-border">
+               An all-in-one platform built to meet your business needs</p>
+            <ul class="text-white text-15 banner-list">
+               <li>
+                  <img alt="icon" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/low-rto.png">
+                  <span>Lower RTO Orders</span>
+               </li>
+               <li>
+                  <img alt="icon" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/tracking-page.png">
+                  <span>Branded Shipment Tracking Page</span>
+               </li>
+               <li>
+                  <img alt="icon" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/ai-based.png">
+                  <span>AI-Based Courier Selection</span>
+               </li>
+               <li>
+                  <img alt="icon" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/daily-cod.png">
+                  <span>Daily COD Remittance</span>
+               </li>
+            </ul>
+         </div>
+         <div class="col-md-2 hidden-sm hidden-xs">
+         </div>
+          <div class="col-lg-6 bookregister">
+           <form class="pt-3 pb-3" id="frmFirst" id="frmFirst">
+  <div class="form-group row">
+    <label class="col-8">Is your entity registered as a Limited, Private Limited, One Person Company or Limited Liability Partnership?</label> 
+    <div class="col-4">
+     <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="registered" id="option1" autocomplete="off" value="Yes" checked> Yes
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="registered" id="option2" value="No" autocomplete="off"> No
+  </label>
+ 
+</div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-8">Is your company less than 10 year old?</label> 
+    <div class="col-4">
+       <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="company_old" id="company_old" autocomplete="off" value="Yes" checked> Yes
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="company_old" id="option2" autocomplete="off" value="No"> No
+  </label>
+ 
+</div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-8">Is the Turnover of your company less than 100 crore?</label> 
+    <div class="col-4">
+     <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="turnover" id="turnover1" autocomplete="off" value="Yes" checked> Yes
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="turnover" id="turnover2" autocomplete="off" value="No"> No
+  </label>
+ 
+</div>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class=" col-12">
+      <button name="submit" type="button" class="btn btn-primary btn-block" onclick="return formNext()">Next <i class="bx bx-arrow-from-left"></i></button>
+    </div>
+  </div>
+</form>
+
+
+
+
+<form>
+<span style="display:none" id="frmnxt">
+  <div class="form-group row" >
+    
+    <div class="col-12">
+      <input id="yourname" name="yourname" type="text" class="form-control" placeholder="Your Name" required="required">
+    </div>
+  </div>
+  <div class="form-group row">
+    
+    <div class="col-12">
+      <input id="email" name="email" type="text" class="form-control" required="required" aria-describedby="emailHelpBlock" placeholder="Your Email"> 
+      <span id="emailHelpBlock" class="form-text text-muted small">Email can be use once only</span>
+    </div>
+  </div>
+  <div class="form-group row">
+ 
+    <div class="col-12">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">+91</div>
+        </div> 
+        <input id="mobile-no" name="mobile-no" type="text" class="form-control" aria-describedby="mobile-noHelpBlock" required="required" placeholder="Mobile Number">
+      </div> 
+      <span id="mobile-noHelpBlock" class="form-text text-muted small">Mobile Number can be use once only</span>
+    </div>
+  </div>
+  <div class="form-group row">
+  
+    <div class="col-12">
+      <input id="password" name="password" type="text" class="form-control" required="required" aria-describedby="passwordHelpBlock" placeholder="Name of Your Brand"> 
+  
+    </div>
+  </div>
+  <div class="form-group row">
+    
+    <div class="col-12">
+      <input id="confirm-password" name="confirm-password" type="text" class="form-control" required="required" placeholder="Website address">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+   
+    <div class="col-12">
+      <input id="confirm-password" name="confirm-password" type="text" class="form-control" required="required" placeholder="Instagram handle">
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <div class=" col-12">
+      <button name="submit" type="submit" class="btn btn-primary btn-block">Submit</button>
+    </div>
+  </div>
+  </span>
+</form>
+
+          </div>
+       
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+  
+<section class="order-sec">
+     <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+            <div class="col-md-5 text-center clearfix">
+            <img class="lazy" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/order-management.png" data-src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/order-management.png" style="max-width: 100%;" alt="order management">
+         </div>
+         
+         <div class="col-md-7 text-gray-darker text-xs-center">
+            <h2 class="sub-heading">Manage Your Complete Order Management from a Single Platform</h2>
+            <ul class="list-group list-unstyled">
+               <li>
+                  <img alt="icon" class="lazy" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/happy-sellers.png" data-src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/happy-sellers.png">
+                  <span>30,000+ Happy Sellers</span>
+               </li>
+               <li>
+                  <img alt="icon" class="lazy" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/couriers.png" data-src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/couriers.png">
+                  <span>17+ Couriers</span>
+               </li>
+               <li>
+                  <img alt="icon" class="lazy" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/shipping-rates.png" data-src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/shipping-rates.png">
+                  <span>Best Shipping Rates</span>
+               </li>
+               <li>
+                  <img alt="icon" class="lazy" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/pincodes.png" data-src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/pincodes.png">
+                  <span>26000+ Pincodes Coverage</span>
+               </li>
+               <li>
+                  <img alt="icon" class="lazy" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/international-shipping.png" data-src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/international-shipping.png">
+                  <span>International Shipping</span>
+               </li>
+               <li>
+                  <img alt="icon" class="lazy" src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/support.png" data-src="https://sellon.kraftly.com/srcdn/kr-shipmultichannel/register-img/support.png">
+                  <span>Best-in-Class Support</span>
+               </li>
+            </ul>
+         </div>
+</div>
+    </div>
+    
+</section>
+ 
+	  
+	  @endsection
+	  
+	  @section('footer')
+	   @include('layouts/footer')
+      @endsection
+	  <script>
+	  function formNext()
+{
+ var formData = $('#frmFirst').serialize();
+	
+	 $.ajax({
+	 		url: '{{ URL::to("/formNext")}}',
+	 		headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+
+	 		type: "GET",
+	 		data: formData,
+			beforeSend: function() {
+       	 $('#cover-spin').show(0);
+       	 
+    },
+
+	 		success: function (res) { 
+			 $('#frmFirst').hide();
+			 $('#frmnxt').show();
+			},
+	 	});
+			 
+
+ 
+
+}
+	  </script>

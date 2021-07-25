@@ -1,0 +1,220 @@
+@extends('layouts.app')
+
+@section('content')
+ <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+       
+        <div class="col-lg-6 order-1 order-lg-1 pt-sm-5 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{{asset('public/assets/img/product.png')}}" class="img-fluid " alt="">
+        </div>
+         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+             <div class="differentfont">Food <h4> & beverages</h4></div>
+          <p class=" nbg">LOREM IPSUM DOLOR SIT</p>
+<p class=" nbg">AMET, CONSECTETUER</p>
+<p class=" nbg">ADIPISCING ELIT.</p>
+          <p class="subtitles">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+sed diam nonummy nibh. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit.</p>
+          <div class="d-lg-flex">
+            <a href="register.html" class="btn-get-started scrollto">Register Now</a>
+            <!--<a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+	<section id="" class="about">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why TOT</h2>
+          <p class="col-8 mx-auto">Is one of its kind, experiential online & offline platform exclusive for start-ups
+which are handpicked (interesting, innovative and unique) for millennial’s and generation Z.
+All the products on the platform would be of high quality and genuine.</p>
+        </div>
+
+        <div class="row content">
+             <div class="col-lg-2"></div>
+          <div class="col-lg-4 d-flex flex-column justify-content-center ">
+              <h3>Benefit</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            
+          </div>
+          <div class="col-lg-4 pt-4 pt-lg-0">
+            <img src="{{asset('public/assets/img/whytot1.jpg')}}" class="img-fluid animated" alt="">
+           
+          </div>
+           <div class="col-lg-2"></div>
+           
+           
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 pt-4 pt-lg-0">
+            <img src="{{asset('public/assets/img/whytot2.jpg')}}" class="img-fluid animated" alt="">
+           
+          </div>
+          <div class="col-lg-4 d-flex flex-column justify-content-center ">
+              <h3>Advantage</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            
+          </div>
+          
+           <div class="col-lg-2"></div>
+        </div>
+        
+
+      </div>
+    </section>
+
+ 	<section id="" class="about cbg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>With us, It's a Heap of Free Features! </h2>
+        </div>
+
+        <div class="row content text-center">
+          <div class="col-lg-3 col-4 mb-lg-5">
+             <img src="{{asset('public/assets/img/ico1.png')}}" class="img-fluid " alt="">
+              <h4>1. Bargain</h4>
+            
+            
+          </div>
+          <div class="col-lg-3 col-4 mb-lg-5">
+            <img src="{{asset('public/assets/img/ico2.png')}}" class="img-fluid " alt="">
+            <h4>2. Product Sampling </h4>
+          </div>
+            <div class="col-lg-3 col-4 mb-lg-5 ">
+            <img src="{{asset('public/assets/img/ico3.png')}}" class="img-fluid " alt="">
+            <h4>3. Create your Avatar </h4>
+           
+          </div>
+          <div class="col-lg-3 col-4 mb-lg-5  ">
+              <img src="{{asset('public/assets/img/ico4.png')}}" class="img-fluid " alt="">
+            <h4>4. Trial Room</h4>
+            
+          </div>
+           <div class="col-lg-3 col-4 offset-lg-2 mt-lg-5 ">
+              <img src="{{asset('public/assets/img/ico5.png')}}" class="img-fluid " alt="">
+            <h4>5. Advertising Avenues </h4>
+            
+          </div>
+           <div class="col-lg-3 col-4 mt-lg-5  ">
+              <img src="{{asset('public/assets/img/ico6.png')}}" class="img-fluid " alt="">
+            <h4>6.  Funding</h4>
+            
+          </div>
+           <div class="col-lg-3 col-4 mt-lg-5 ">
+              <img src="{{asset('public/assets/img/ico7.png')}}" class="img-fluid " alt="">
+            <h4>7. Voice Trial Room</h4>
+            
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </section>
+    	<section id="highlights" class="about">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>With us, It's Easy Selling. </h2>
+        </div>
+
+        <div class="row content text-center">
+          <div class="col-lg-3 col-6  ">
+             <img src="{{asset('public/assets/img/nico1.png')}}" class="img-fluid animated" alt="">
+              <h5><span>25k</span> Sellers</h5>
+            
+            
+          </div>
+          <div class="col-lg-3 col-6">
+            <img src="{{asset('public/assets/img/nico2.png')}}" class="img-fluid animated" alt="">
+             <h5><span>$200M</span> GVM</h5>
+          </div>
+            <div class="col-lg-3 col-6 ">
+            <img src="{{asset('public/assets/img/nico3.png')}}" class="img-fluid animated" alt="">
+            <h5><span>220+</span>  Countries</h5>
+           
+          </div>
+          <div class="col-lg-3 col-6">
+              <img src="{{asset('public/assets/img/nico4.png')}}" class="img-fluid animated" alt="">
+            <h5><span>26k+</span> Pincodes</h5>
+            
+          </div>
+          
+        </div>
+        
+
+      </div>
+    </section>
+    
+    <section class="brandvideo pb-0" style=""><div class="container"> <div class="row"> <div class="col-lg-8 col-10 mx-auto positionvideo"> <h4><div class="div1">For Millennials</div> <div class="div2">by Millennials</div></h4><a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video btnvideo" data-vbtype="video" data-autoplay="true"><i class="icofont-play-alt-2"></i></a><img src="{{asset('public/assets/img/mac.png')}}" class="img-fluid animated " alt=""></div></div></div></section>
+    
+    <section id="" class="about">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>With us, It's Easy Selling. </h2>
+        </div>
+
+        <div class="row content">
+          <div class="carousel-wrap">
+  <div class="owl-carousel" id="carousel">
+    <div class="item"><img src="{{asset('public/assets/img/logo1.jpg')}}"></div>
+    <div class="item"><img src="{{asset('public/assets/img/logo2.jpg')}}"></div>
+    <div class="item"><img src="{{asset('public/assets/img/logo3.jpg')}}"></div>
+   <div class="item"><img src="{{asset('public/assets/img/logo2.jpg')}}"></div>
+  </div>
+</div>
+          
+        </div>
+        
+
+      </div>
+    </section>
+    
+     <section id="testimonials" class="about">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Seller Love Us </h2>
+        </div>
+
+        <div class="row content">
+          <div class="carousel-wrap">
+  <div class="owl-carousel" id="carousel1">
+    <div class="item"><img src="{{asset('public/assets/img/testi1.jpg')}}"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p></div>
+     <div class="item"><img src="{{asset('public/assets/img/testi1.jpg')}}"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p></div>
+               <div class="item"><img src="{{asset('public/assets/img/testi1.jpg')}}"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p></div>
+               <div class="item"><img src="{{asset('public/assets/img/testi1.jpg')}}"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p></div>
+               <div class="item"><img src="{{asset('public/assets/img/testi1.jpg')}}"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.</p></div>
+  </div>
+</div>
+          
+        </div>
+        
+
+      </div>
+    </section>
+	  
+	  @endsection
+	  
+	  @section('footer')
+	   @include('layouts/footer')
+      @endsection

@@ -1,0 +1,111 @@
+@media screen and (max-width: 1349px) {
+	
+	.nav-menu > li > a{font-size: 13px;margin: 30px 0 0 21px;}
+	.home-banner-secton-bg:before{background-size: 290px;}	
+	.home-banner-secton-bg:after{background-position: bottom -56px right;}
+	.scroll-dwon span{font-size: 12px;}
+	.scroll-dwon{padding: 0 0 60px 0px;background-size: 10px;}
+	.delivering-text{bottom: 32px;}
+	.footer-link ul li a{font-size: 12px;}
+	.dwonload-app h3{font-size: 12px;}
+	h1{font-size: 60px;}
+	.search-head button{line-height: 35px;}
+	.search-head input{line-height: 38px;padding: 0px 40px;}
+	.bag-to-card,.profile-img{width: 30px;height: 30px;}
+	.bag-to-card img,.profile-img img{width: 100%;}
+	.search-head{width: 330px;}
+	.home-banner-middle h1 span{font-size: 30px;}
+	.home-banner-middle h1{margin: 0 0 30px 0;}
+}
+
+@media screen and (max-width: 1199px) {
+	.search-head{width: 260px;}
+	.search-head input{padding: 0px 20px;}
+	header{padding: 16px 20px;}
+	.navigation{height: auto;}
+	.explore-img img{max-width: 120px;}
+	.explore-img{height: 156px;}
+	.explore-content .explore-btn span{padding: 0 15px;line-height: 50px;}
+	.beauty-section{margin: 100px 0 100px 0px;}
+	.crunchy-detail h3{font-size: 35px;}
+	.crunchy-detail{padding: 40px 0 0 47px;}
+	.crunchy-detail p{font-size: 15px;margin: 20px 0 38px 0px;}
+	footer{padding: 0px;}
+	.nav-menu > li > a{margin: 30px 0 0 15px;}
+	h1{font-size: 47px;}
+	.home-banner-middle h1 span{font-size: 25px;}
+	p{font-size: 15px;}
+	.home-banner-secton-bg:after{background-position: bottom -60px right;}
+	.coffee-table-icon img{right: 4%;bottom: -99px;}
+
+}
+
+@media screen and (max-width: 991px) {
+	.navigation-portrait .nav-brand{line-height: 65px;margin: 0 0 0 20px;}
+	.nav-toggle{margin-bottom: -17px;left: -25px;right: inherit;}
+	.nav-menu > li{padding: 0px;}
+	.navigation-portrait .nav-menu > li > a{padding: 15px;margin: 0px;}
+	.nav-header a > img{width: 106px;}
+	.search-head input{line-height: 35px;}
+	.search-head button{line-height: 33px;}
+	.navigation-portrait .nav-brand{margin: 0 0 0 11px;}
+	.profile-img{margin: 0 20px 0 0px;}
+	.search-head{width: 211px;}
+	.search-head input{font-size: 12px;}
+	header{padding: 16px 0px 16px 16px}
+	.navigation-portrait .nav-brand{margin: 0 0 0 25px;}
+	.nav-toggle{left: -8px;}
+	.home-banner-secton-bg:before{background-size: 220px;}
+	.home-banner-secton-bg:after{background-size: 340px;background-position: bottom -10px right;}
+	.home-banner-middle h1{margin: -100px 0 30px 0px;}
+	.explore-section{margin: 40px 0 30px 0px;}
+	h2{font-size: 24px;}
+	.explore-content .explore-btn span{font-size: 11px;line-height: 40px;}
+	.beauty-iocn-box{margin: 0 55px 0 0px;}
+	.dwonload-app{float: left;}
+	.footer-link{margin: 0 0 20px;}
+	.socil-media{margin: 0 0 0 20px;}
+	.copy-text-right-bottom{text-align: center;}
+	.copy-text{float: none;display: inline-block;} 
+	.copy-text p{text-align: center;}
+	a.shop-btn{font-size:13px;line-height: 32px;padding: 0 12px;border-radius: 6px;}
+	.coffee-table-icon img{bottom: -89px;width: 150px;}  
+	.accept-card{float: none;display: inline-block;}
+	.crunchy-detail h3{font-size: 24px;}
+	.crunchy-detail p{font-size: 13px;}
+	  
+}
+
+@media screen and (max-width: 767px) {
+
+	.home-banner-secton-bg:before{background-size: 180px;}
+	.home-banner-secton-bg:after{background-position: bottom 100px right -20px;background-size: 260px;}
+	.home-banner-middle p{display: none;}
+	.home-banner-middle h1{margin: -170px 0 30px 0px;line-height: 65px;}	
+	.explore-box{background: linear-gradient(to right, #80D3F0,#EDD646);padding: 1px;border-radius: 10px;margin: 0 0 20px;}
+	.explore-content .explore-btn span{padding: 0px;}
+	.explore-img,.explore-content{background: #fff;border-radius: 10px;padding: 15px;}
+	.explore-content h2{margin: 0px;text-align: left;}
+	.explore-img img{max-width: 68px;}
+	.explore-img {position: absolute;right: 40px;width: auto;height: auto;top: 3px;}
+    .explore-content{text-align: left;}
+    .explore-content .explore-btn{background: #fff;}
+	.crunchy-detail{padding: 20px 0 0 27px;}
+	.beauty-iocn-box{width: 45%;margin: 0 0 20px;}
+	.beauty-iocn-box:last-child{margin: 0 0 20px;}
+	.beauty-section{margin: 0px;}
+	.explore-section{margin: 40px 0 0px 0px;}
+	.cycle-icon img{display: none;}
+	.crunchy-delicious-content{padding: 0px 40px;}
+	.crunchy-img{padding: 0px 15px;}
+	.crunchy-detail h3{font-size: 31px;}
+	.crunchy-detail p{font-size: 15px;}
+	.crunchy-detail{padding: 20px 0 20px 35px;}
+	.tree-icon img{left: -20px;}
+	.dwonload-app{float: none;display: inline-block;}
+	footer{text-align: center;}
+	.footer-link{text-align: left;}
+	.copy-text-right-bottom{margin: 25px 0px 30px;}	
+
+}
+

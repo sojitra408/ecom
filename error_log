@@ -1,0 +1,41 @@
+[01-Jun-2020 10:31:37 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'thisthat'@'localhost' (using password: YES) in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 3
+[01-Jun-2020 10:31:37 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 4
+[01-Jun-2020 10:37:46 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'thisthat'@'localhost' (using password: YES) in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 3
+[01-Jun-2020 10:37:46 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 4
+[01-Jun-2020 10:38:54 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'thisthat'@'localhost' (using password: YES) in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 3
+[01-Jun-2020 10:38:54 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 4
+[01-Jun-2020 10:39:18 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'thisthat'@'localhost' (using password: YES) in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 3
+[01-Jun-2020 10:39:18 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 4
+[01-Jun-2020 10:39:58 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'thisthat'@'localhost' (using password: YES) in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 3
+[01-Jun-2020 10:39:58 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 4
+[01-Jun-2020 10:40:53 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'thisthat'@'localhost' (using password: YES) in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 3
+[01-Jun-2020 10:40:53 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/connect.php on line 4
+[01-Jun-2020 10:40:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/checkMail.php on line 7
+[01-Jun-2020 10:40:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/pbcalxdq1usz/public_html/landing-page/checkMail.php on line 8
+[01-Jun-2020 10:40:53 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/checkMail.php on line 10
+[01-Jun-2020 10:40:53 UTC] PHP Warning:  mysqli_insert_id() expects parameter 1 to be mysqli, boolean given in /home/pbcalxdq1usz/public_html/landing-page/checkMail.php on line 11
+[02-Jun-2020 06:52:55 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:52:57 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:17 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:53:18 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[02-Jun-2020 06:55:45 UTC] PHP Notice:  Undefined variable: session in /home/pbcalxdq1usz/public_html/landing-page/index.php on line 2
+[20-Nov-2020 03:01:02 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[03-Dec-2020 03:55:07 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Dec-2020 03:56:06 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Dec-2020 03:57:11 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Dec-2020 09:10:02 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 528384 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Pool.php on line 221
+[03-Dec-2020 09:11:33 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Dec-2020 09:12:47 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[03-Dec-2020 09:14:06 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Dec-2020 09:15:45 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Dec-2020 12:29:00 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
+[03-Dec-2020 12:39:29 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223
+[03-Dec-2020 12:43:00 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/Solver.php on line 223

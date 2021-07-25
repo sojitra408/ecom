@@ -1,0 +1,246 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('app');
+});
+
+
+
+
+Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function(){ 
+Route::get('/', 'Admin\AdminController@home') ;
+Route::get('/home', 'Admin\AdminController@home')->name('admin.home') ;
+ 
+ Route::any('/logout', 'Admin\Auth\LoginController@logout')->name('admin.logout');
+Route::get('/users_data/{id}', 'Admin\UserController@usersDetail')->name('admin.usersDetail') ;
+Route::get('/brand', 'Admin\BrandController@index')->name('admin.brand') ;
+Route::get('/attributes', 'Admin\AttributesController@index')->name('admin.attributes') ;
+Route::get('/attributes-create', 'Admin\AttributesController@create')->name('attributes.create') ;
+Route::post('/attributes-save', 'Admin\AttributesController@store')->name('attributes.store') ;
+Route::any('/attributeList', 'Admin\AttributesController@attributeList')->name('attributeList') ;
+Route::any('/attributes-delete/{id}', 'Admin\AttributesController@destroy')->name('attributes.delete') ;
+Route::any('/attributes-edit/{id}', 'Admin\AttributesController@edit')->name('attributes.edit') ;
+Route::post('/attributes-update/{id}', 'Admin\AttributesController@update')->name('attributes.update') ;
+
+Route::get('/brand-create', 'Admin\BrandController@create')->name('brand.create') ;
+Route::post('/brand-save', 'Admin\BrandController@store')->name('brand.store') ;
+Route::any('/brandList', 'Admin\BrandController@brandList')->name('brandList') ;
+Route::any('/brand-delete/{id}', 'Admin\BrandController@destroy')->name('brand.delete') ;
+Route::any('/brand-edit/{id}', 'Admin\BrandController@edit')->name('brand.edit') ;
+Route::post('/brand-update/{id}', 'Admin\BrandController@update')->name('brand.update') ;
+ 
+
+Route::get('/registerReport', 'Admin\ReportController@registerReport')->name('admin.registerReport') ;
+Route::get('/notregisterReport', 'Admin\ReportController@notregisterReport')->name('admin.notregisterReport') ;
+
+Route::get('/leads', 'Admin\AdminController@leads')->name('admin.leads') ;
+
+
+Route::get('/seller', 'Admin\SellerController@index')->name('admin.seller') ;
+Route::get('/seller-create', 'Admin\SellerController@create')->name('seller.create') ;
+Route::post('/seller-save', 'Admin\SellerController@store')->name('seller.store') ;
+Route::get('/seller-edit/{id}', 'Admin\SellerController@edit')->name('seller.edit') ;
+Route::post('/seller-update/{id}', 'Admin\SellerController@update')->name('seller.update') ;
+Route::any('/seller-delete/{id}', 'Admin\SellerController@delete')->name('seller.delete') ;
+
+
+
+Route::get('/category', 'Admin\CategoryController@index')->name('admin.category') ;
+
+Route::post('/addcategory', 'Admin\CategoryController@categorycreate')->name('admin.categorycreate') ;
+Route::post('/addsubcategory', 'Admin\CategoryController@subcategorycreate')->name('admin.subcategorycreate') ;
+Route::get('/edit-category/{id}', 'Admin\CategoryController@edit')->name('category.edit') ;
+
+Route::post('/update-category/{id}', 'Admin\CategoryController@catupdate')->name('category.update') ;
+
+Route::any('/delete-category/{id}', 'Admin\CategoryController@catdelete')->name('category.delete') ;
+
+Route::get('/product', 'Admin\ProductController@index')->name('admin.product') ;
+Route::any('/productList', 'Admin\ProductController@productList')->name('dataList') ;
+Route::get('/product-create/{step}', 'Admin\ProductController@create')->name('product.create') ;
+Route::post('/product-create/{step}', 'Admin\ProductController@store') ;
+
+
+Route::get('/orders', 'Admin\OrderController@index')->name('admin.order') ;
+Route::get('/order-create', 'Admin\OrderController@create')->name('order.create') ;
+Route::post('/order-create', 'Admin\OrderController@create')->name('order.save') ;
+Route::get('/order-edit/{order_id}', 'Admin\OrderController@update')->name('order.edit') ;
+Route::post('/order-edit/{order_id}', 'Admin\OrderController@update')->name('order.update') ;
+Route::get('/order-delete/{order_id}', 'Admin\OrderController@destroy')->name('order.delete') ;
+
+Route::get('/users', 'Admin\UserController@index')->name('admin.users') ;
+Route::get('/user-create', 'Admin\UserController@create')->name('user.create') ;
+Route::post('/user-create', 'Admin\UserController@create')->name('user.save') ;
+Route::get('/user-edit/{user_id}', 'Admin\UserController@update')->name('user.edit') ;
+Route::post('/user-edit/{user_id}', 'Admin\UserController@update')->name('user.update') ;
+Route::get('/user-delete/{user_id}', 'Admin\UserController@destroy')->name('user.delete') ;
+Route::get('/user-detail/{user_id}', 'Admin\UserController@userDetail')->name('user.detail') ;
+
+
+
+Route::get('/taxes', 'Admin\TaxController@index')->name('admin.tax') ;
+Route::get('/taxes-create', 'Admin\TaxController@create')->name('tax.create') ;
+Route::post('/taxes-save', 'Admin\TaxController@store')->name('tax.store') ;
+Route::any('/taxes-delete/{id}', 'Admin\TaxController@destroy')->name('tax.delete') ;
+Route::any('/taxes-edit/{id}', 'Admin\TaxController@edit')->name('tax.edit') ;
+Route::post('/taxes-update/{id}', 'Admin\TaxController@update')->name('tax.update') ;
+
+Route::get('/shipping', 'Admin\ShippingController@index')->name('admin.shipping') ;
+Route::get('/shipping-create', 'Admin\ShippingController@create')->name('shipping.create') ;
+Route::post('/shipping-save', 'Admin\ShippingController@store')->name('shipping.store') ;
+Route::get('/shipping-edit/{id}', 'Admin\ShippingController@edit')->name('shipping.edit') ;
+Route::post('/shipping-update/{id}', 'Admin\ShippingController@update')->name('shipping.update') ;
+Route::any('/shipping-delete/{id}', 'Admin\ShippingController@delete')->name('shipping.delete') ;
+
+Route::get('/features', 'Admin\FeaturesController@index')->name('admin.features') ;
+Route::get('/features-create', 'Admin\FeaturesController@create')->name('features.create') ;
+Route::post('/features-save', 'Admin\FeaturesController@store')->name('features.store') ;
+
+Route::get('/tags', 'Admin\TagsController@index')->name('admin.tags') ;
+Route::get('/tags-create', 'Admin\TagsController@create')->name('tags.create') ;
+Route::post('/tags-save', 'Admin\TagsController@store')->name('tags.store') ;
+
+Route::get('/transaction', 'Admin\TransactionController@index')->name('admin.transaction') ;
+
+Route::get('/faq', 'Admin\FaqController@index')->name('admin.faq') ;
+Route::get('/faq-create', 'Admin\FaqController@create')->name('faq.create') ;
+Route::post('/faq-save', 'Admin\FaqController@store')->name('faq.store') ;
+Route::any('/faq-delete/{id}', 'Admin\FaqController@delete')->name('faq.delete') ;
+Route::get('/faq-edit/{id}', 'Admin\FaqController@edit')->name('faq.edit') ;
+Route::post('/faq-update/{id}', 'Admin\FaqController@update')->name('faq.update') ;
+
+
+Route::get('/discount', 'Admin\DiscountController@index')->name('admin.discount') ;
+Route::get('/discount-create', 'Admin\DiscountController@create')->name('discount.create') ;
+Route::post('/discount-save', 'Admin\DiscountController@store')->name('discount.store') ;
+Route::any('/discount-delete/{id}', 'Admin\DiscountController@delete')->name('discount.delete') ;
+Route::get('/discount-edit/{id}', 'Admin\DiscountController@edit')->name('discount.edit') ;
+Route::post('/discount-update/{id}', 'Admin\DiscountController@update')->name('discount.update') ;
+
+
+
+Route::get('/setting', 'Admin\SettingController@index')->name('admin.setting') ;
+
+
+
+
+Route::get('/datatable', 'Admin\AdminController@datatable')->name('admin.datatable') ;
+
+
+Route::get('/upload-image', 'Admin\ImageController@create')->name('image.create') ;
+Route::post('/upload-store', 'Admin\ImageController@store')->name('image.store') ;
+Route::get('/image/{image}', 'Admin\ImageController@show')->name('image.view') ;
+Route::any('/meadiaList', 'Admin\ImageController@meadiaList')->name('meadiaList') ;
+
+Route::any('/deleteImage/{filename}', 'Admin\ImageController@deleteImage')->name('deleteImage') ;
+
+
+
+
+Route::any('/createPassword/{id}', 'Admin\AdminController@createPassword')->name('create.password');
+
+});
+ 
+    Route::get('/admin/login', 'Admin\Auth\LoginController@showAdminLoginForm')->name('admin.login');
+	
+	 Route::get('/admin', 'Admin\Auth\LoginController@showAdminLoginForm')->name('admin.login');
+	  
+     Route::get('/register/admin', 'Admin\Auth\RegisterController@showAdminRegisterForm');
+     Route::get('/register/writer', 'Admin\Auth\RegisterController@showWriterRegisterForm');	
+
+      
+	 Route::post('/admin/login', 'Admin\Auth\LoginController@adminLogin')->name('adminlogin');
+    Route::post('/login/customer', 'Admin\Auth\LoginController@writerLogin')->name('login');;
+    Route::post('/register/admin', 'Admin\Auth\RegisterController@createAdmin')->name('registerAdmin');
+    Route::post('/register/customer', 'Admin\Auth\RegisterController@createWriter');
+
+ 
+
+ //############################################################################################################### 
+ 
+
+  Route::get('/register.html', 'FrontController@registerpage');
+  Route::get('/login.html', 'Auth\LoginController@showCustomerLoginForm');
+   Route::get('/login', 'Auth\LoginController@showCustomerLoginForm');
+   Route::redirect('/login', '/login.html');
+   
+  
+    Route::get('/login/customer', 'Auth\LoginController@showCustomerLoginForm');
+	 Route::redirect('/login/customer', '/login.html');
+   Route::post('/postLogin', 'Auth\LoginController@customerLogin')->name('post.login'); 
+   Route::any('/logout', 'Auth\LoginController@logout')->name('logout'); 
+   
+ Route::get('/thanks', 'FrontController@thanks');
+ Route::get('/formNext', 'FrontController@formNext');
+ Route::post('/postRegister', 'FrontController@postRegister')->name('post.register');
+  Route::get('/postCheckEmail', 'FrontController@postCheckEmail');
+  Route::get('/sendEmailOTP', 'FrontController@sendEmailOTP'); 
+   Route::get('/sendMobileOTP', 'FrontController@sendMobileOTP');
+   Route::get('/postCheckMobile', 'FrontController@postCheckMobile');
+    Route::get('/otpVerify', 'FrontController@otpVerify');
+ Route::get('/otpVerifyEmail', 'FrontController@otpVerifyEmail');
+ 
+  Route::get('/otpVerifyMobile', 'FrontController@otpVerifyMobile');
+	
+ Route::get('/resetsession', 'FrontController@resetsession')->name('reset.button');	
+ Route::get('/generateExcel', 'FrontController@generateExcel');	
+ 
+	
+	
+	
+	Route::group(['prefix'=>'/','middleware'=>'auth:web'],function(){ 
+	
+	 Route::get('myaccount.html', 'UserController@myaccount')->name('page.myaccount');
+	  Route::get('bank-details.html', 'UserController@bankDetails')->name('page.bank');;
+	  Route::get('documentation.html', 'UserController@documentation')->name('page.documentation');;
+	    Route::get('brand-details.html', 'UserController@brandDetails')->name('page.brand');;
+		   Route::get('founder.html', 'UserController@founder')->name('page.founder');;
+	  
+	    Route::get('company-details.html', 'UserController@companyDetails')->name('page.company');;
+	  Route::get('dashboard', 'UserController@myaccount');
+	   Route::post('gstvalidate', 'FromController@gstvalidate')->name('post.gstvalidate');
+	   Route::post('SaveCompanyDetails', 'FromController@SaveCompanyDetails')->name('post.step1');
+	   Route::post('UpdateCompanyDetails', 'FromController@UpdateCompanyDetails')->name('post.updatestep1');
+	    Route::post('SaveBankDetails', 'FromController@SaveBankDetails')->name('post.savebank');
+	   Route::post('UpdateBankDetails', 'FromController@UpdateBankDetails')->name('post.updatebank');
+	   
+	     Route::post('updatefounder', 'FromController@updatefounder')->name('post.updatefounder');
+	   Route::post('savefounder', 'FromController@savefounder')->name('post.savefounder'); 
+	       Route::post('updateBrand', 'FromController@updateBrand')->name('post.updateBrand');
+	   Route::post('saveBrand', 'FromController@saveBrand')->name('post.saveBrand'); 
+	     Route::post('uploadStatus', 'FromController@uploadStatus')->name('post.uploadStatus'); 
+	   Route::any('/ajax_upload/action', 'FromController@action')->name('ajaxupload.action');
+	   
+	     Route::get('messaging.html', 'MessageController@tikcet')->name('page.messaging');
+	      Route::get('create-ticket.html', 'MessageController@createTicket')->name('page.createTicket');
+	        Route::get('show-messaging/{id}', 'MessageController@showMessage')->name('page.showmessaging');
+	        Route::any('close-messaging/{id}', 'MessageController@closedMessage')->name('post.closedMessage');  
+	      
+	      Route::post('postcreateTicket', 'MessageController@postcreateTicket')->name('post.createTicket');
+	        Route::get('reply-messaging/{id}', 'MessageController@replyMessage')->name('page.replyMessage');
+	     Route::post('postMessage', 'MessageController@postMessage')->name('post.message');
+	
+  });
+
+ 
+
+       
+	  
+      
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

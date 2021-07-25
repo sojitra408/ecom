@@ -1,0 +1,56 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('index');
+});
+
+
+
+
+Route::group(['prefix'=>'admin','middleware'=>'auth:admin'],function(){ 
+Route::get('/', 'Admin\AdminController@home') ;
+Route::get('/home', 'Admin\AdminController@home')->name('admin.home') ;
+Route::get('/registration', 'Admin\AdminController@registration')->name('admin.registration') ;
+
+Route::any('/logout', 'Admin\Auth\LoginController@logout')->name('admin.logout');
+
+});
+ 
+    Route::get('/admin/login', 'Admin\Auth\LoginController@showAdminLoginForm')->name('admin.login');
+	
+	 Route::get('/admin', 'Admin\Auth\LoginController@showAdminLoginForm')->name('admin.login');
+	  
+     Route::get('/register/admin', 'Admin\Auth\RegisterController@showAdminRegisterForm');
+     Route::get('/register/writer', 'Admin\Auth\RegisterController@showWriterRegisterForm');	
+
+      
+	 Route::post('/admin/login', 'Admin\Auth\LoginController@adminLogin')->name('adminlogin');
+    Route::post('/login/customer', 'Admin\Auth\LoginController@writerLogin');
+    Route::post('/register/admin', 'Admin\Auth\RegisterController@createAdmin')->name('registerAdmin');
+    Route::post('/register/customer', 'Admin\Auth\RegisterController@createWriter');
+
+ 
+
+  
+ 
+
+ Route::get('/register.html', 'FrontController@registerpage');
+ Route::get('/formNext', 'FrontController@formNext');
+ Route::post('/postRegister', 'FrontController@postRegister')->name('post.register');
+
+       
+	  
+      
